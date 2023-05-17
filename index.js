@@ -9,6 +9,9 @@ const port = (process.env.port || 3000);
 // Instancia de express
 const app = express();
 
+// Permitir trabajar con formato JSON
+app.use(express.json());
+
 // Configurar el puerto
 app.set('port', port);
 
